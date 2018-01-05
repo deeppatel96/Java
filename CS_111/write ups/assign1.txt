@@ -1,0 +1,129 @@
+Deep Patel  |   Problem Analysis  |  Assignment 1
+net-ID: dp767
+CS 111 - Tjang
+
+Problem 1
+The objective of this code is asking for 2 integer inputs and output the sum of the two inputs. I did this by using "System.out.println" to ask for a number and then the IO function "readInt" to assign that value to an integer variable that I created. To display the answer I used the IO function "outputIntAnswer" and inside wrote the formula for the sum of the two variables by using the plus sign. My test cases are printed below:
+
+Deeps-MacBook-Pro:java deeppatel$ java Sum
+Enter the first number:
+5
+Enter the second number:
+-3
+RESULT: 2
+
+Deeps-MacBook-Pro:java deeppatel$ java Sum
+Enter the first number:
+4344
+Enter the second number:
+4343  
+RESULT: 8687
+
+Deeps-MacBook-Pro:java deeppatel$ java Sum
+Enter the first number:
+20
+Enter the second number:
+-30
+RESULT: -10
+
+--------------------------------------------------------
+
+Problem 2
+The objective of this code is to take 3 roots to a cubic equation and output that equation in canonical form. To do this I first used "System.out.println" to ask the user for a root and the IO function "readInt" to save the input into a given variable. Then, based on calculations done by hand, I made formulas for the  second, third, and fourth coefficients (the first is 1) and plugged in the variables into these formulas to get the 3 coefficients. Then I used if/else statements to print each coefficient with a minus or a plus before it based on whenever it is positive or negative. When printing the value of the coefficient I took the absolute value of the coefficient if it was negative because there will already be a minus sign in front of it. Below are my test cases:
+
+Deeps-MacBook-Pro:java deeppatel$ java Poly
+Enter the first root:
+5
+Enter the second root:
+-3
+Enter the third root:
+2
+
+The polynomial is:
+x^3 - 4x^2 - 11x + 30
+
+Deeps-MacBook-Pro:java deeppatel$ java Poly
+Enter the first root:
+-32 
+Enter the second root:
+45
+Enter the third root:
+2
+
+The polynomial is:
+x^3 - 15x^2 - 1414x + 2880
+
+Deeps-MacBook-Pro:java deeppatel$ java Poly
+Enter the first root:
+3
+Enter the second root:
+5
+Enter the third root:
+-3
+
+The polynomial is:
+x^3 - 5x^2 - 9x + 45
+
+--------------------------------------------------------
+
+Problem 3
+The objective of this code is to take the coefficients of a quadratic equation and a linear equation and output either 1 or coordinates of intersection or display "none" if there are none. I started off by asking for the integer coefficients using "System.out.println" and storing those values using the IO functions "readDouble" because a constant can be a decimal number, not just an integer. Then, I used the quadratic formula to find the 2 possible x coordinates and then plug this into the linear formula y=mx+b to get the y coordinate of intersection. Then I printed the answers using an if statement where if the root (b^2-4ac)^1/2 is equal to zero, only print one coordinate because both will be the same because there is only 1 point of intersection. Then use else if to print "none" if the root in imaginary (negative inside the radical) and else to print both coordinates (when the root is positive). My test cases are pasted below:
+
+Deeps-MacBook-Pro:java deeppatel$ java Intersect
+Enter the constant d:
+5
+Enter the constant f:
+-3
+Enter the constant g:
+2
+Enter the constant m:
+1
+Enter the constant b:
+3
+The intersection(s) is/are:
+(1.0,4.0)
+(-0.2,2.8)
+
+Deeps-MacBook-Pro:java deeppatel$ java Intersect
+Enter the constant d:
+3
+Enter the constant f:
+-4
+Enter the constant g:
+12
+Enter the constant m:
+1.5
+Enter the constant b:
+3
+The intersection(s) is/are:
+none
+
+Deeps-MacBook-Pro:java deeppatel$ java Intersect
+Enter the constant d:
+1
+Enter the constant f:
+1
+Enter the constant g:
+1
+Enter the constant m:
+1
+Enter the constant b:
+1
+The intersection(s) is/are:
+(0.0,1.0)
+
+Deeps-MacBook-Pro:java deeppatel$ java Intersect
+Enter the constant d:
+232.5
+Enter the constant f:
+223
+Enter the constant g:
+23.42
+Enter the constant m:
+1-2
+That is not a number.  Enter again: -323
+Enter the constant b:
+2
+The intersection(s) is/are:
+(-0.03990899113710198,14.89060413728394)
+(-2.308478105637092,747.6384281207808)

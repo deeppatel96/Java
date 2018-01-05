@@ -1,0 +1,163 @@
+Deep Patel  |  Problem Analysis/Test Cases  |  Assignment 2
+net-ID: dp767
+CS 111 - Tjang
+
+Problem 1: Scores
+The objective of this code is to ask for a number of judges and compute the average of the scores of the number of judges the user inputed, omitting the highest and lowest scores to avoid any bias. I did this by first asking for a number of judges, which had to be greater than 2. Then I asked for a score between 0 and 10 for however many judges there were, keeping track of the lowest and highest scores. While getting the scores, I added then to a total and at the end subtracted the highest and lowest from it and divided by 2 less than the number of judges to account for the extremes. Below are some test cases.
+
+Deeps-MacBook-Pro:java deeppatel$ java Scores
+What is the number of judges on the panel?
+4
+Enter a judge's score
+-4.3
+User entered bad input.
+Enter a judge's score
+3.7
+Enter a judge's score
+4.9
+Enter a judge's score
+11.0
+User entered bad input.
+Enter a judge's score
+10.5
+User entered bad input.
+Enter a judge's score
+10.0
+Enter a judge's score
+4.3
+RESULT: 4.600000000000001
+
+Deeps-MacBook-Pro:java deeppatel$ java Scores
+What is the number of judges on the panel?
+2 
+User entered bad input.
+What is the number of judges on the panel?
+-2
+User entered bad input.
+What is the number of judges on the panel?
+3
+Enter a judge's score
+10
+Enter a judge's score
+10
+Enter a judge's score
+10
+RESULT: 10.0
+
+Deeps-MacBook-Pro:java deeppatel$ java Scores
+What is the number of judges on the panel?
+5
+Enter a judge's score
+-1.4
+User entered bad input.
+Enter a judge's score
+1.5
+Enter a judge's score
+2.95
+Enter a judge's score
+7.5
+Enter a judge's score
+8
+Enter a judge's score
+4.4
+RESULT: 4.95
+
+--------------------------------------------------------
+
+Problem 2: TwoSmallest
+The objective of this code is to get a string of numbers from the user and output the two smallest numbers in order from the string. We do this by first asking the user for a terminating real number. Then I recorded it and made sure the first 2 numbers the user inputs after it is not the terminating value itself. Then I used equaity operators to store the value as the smallest or second smallest based on its value relative to the already stores smallest and second smallest (based on the first 2 values). Below are a few test cases.
+
+Deeps-MacBook-Pro:java deeppatel$ java TwoSmallest
+Enter a real number to be the terminating value
+123
+Enter a real number
+17
+Enter a real number
+23.5
+Enter a real number
+10
+Enter a real number
+15.2
+Enter a real number
+30
+Enter a real number
+8
+Enter a real number
+16
+Enter a real number
+123
+RESULT: 8.0
+RESULT: 10.0
+
+Deeps-MacBook-Pro:java deeppatel$ java TwoSmallest
+Enter a real number to be the terminating value
+-10.55
+Enter a real number
+120
+Enter a real number
+-525
+Enter a real number
+353-3
+That is not a number.  Enter again: 3232
+Enter a real number
+234
+Enter a real number
+-55
+Enter a real number
+-100
+Enter a real number
+300
+Enter a real number
+-10.55
+RESULT: -525.0
+RESULT: -100.0
+
+Deeps-MacBook-Pro:java deeppatel$ java TwoSmallest
+Enter a real number to be the terminating value
+400
+Enter a real number
+10
+Enter a real number
+20
+Enter a real number
+30
+Enter a real number
+-10
+Enter a real number
+-20
+Enter a real number
+-30
+Enter a real number
+100
+Enter a real number
+400
+RESULT: -30.0
+RESULT: -20.0
+
+--------------------------------------------------------
+
+Problem 3: NthPrime
+The objective of this code is to ask the user for an integer n and output the nth prime number. To do this I used the IO module to record the integer n and to report a bad input if n was less than 1. Then, I used the while loop, for loop, if loop, and modulus operator to calculate the nth prime. Below are a few test cases for the code.
+
+Deeps-MacBook-Pro:java deeppatel$ java NthPrime
+Enter an integer 'n' to get the nth prime
+10
+RESULT: 29
+
+Deeps-MacBook-Pro:java deeppatel$ java NthPrime
+Enter an integer 'n' to get the nth prime
+-10
+User entered bad input.
+Enter an integer 'n' to get the nth prime
+0
+User entered bad input.
+Enter an integer 'n' to get the nth prime
+1
+RESULT: 2
+Deeps-MacBook-Pro:java deeppatel$ 
+
+Deeps-MacBook-Pro:java deeppatel$ java NthPrime
+Enter an integer 'n' to get the nth prime
+100
+RESULT: 541
+Deeps-MacBook-Pro:java deeppatel$ 

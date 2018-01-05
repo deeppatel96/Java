@@ -1,0 +1,112 @@
+Deep Patel    Assignment 5       Due 11/30
+
+PROBLEM 1
+1) Selection Sort
+The selection sort will go through the array comparing all the letters and one less after every pass
+
+Start
+M U E J R Q X B
+
+1st Loop - B and M swap
+7 comparisons
+B U E J R Q X M
+
+2nd Loop - E and U swap
+6 comparisons
+B E U J R Q X M
+
+3rd Loop - J and U swap
+5 comparisons
+B E J U R Q X M
+
+4th Loop - M and U swap
+4 comparisons
+B E J M R Q X U
+
+5th Loop - Q and R swap
+3 comparisons
+B E J M Q R X U
+
+6th Loop - stays
+2 comparisons
+B E J M Q R X U
+
+7th Loop - U and X swap
+1 comparison
+B E J M Q R U X
+
+
+2) Iteration Sort
+The iteration sort will go through the letters one by one and compare it to the one in front of it starting with the secnd letter in the array. If it is before it in the alphabet the letters will be swapped and if not, they will remain in the same place.
+
+Start
+M U E J R Q X B
+
+1 Comparison- stays
+M U E J R Q X B
+
+2 Comparisons - E goes to beginning
+E M U J R Q X B
+
+3 Comparisons - J goes before M but after E
+E J M U R Q X B
+
+2 Comparisons - R goes before U but after M
+E J M R U Q X B
+
+2 Comparisons - Q goes before R but after M
+E J M Q R U X B
+
+2 Comparisons - stays
+E J M Q R U X B
+
+7 Comparisons - B to the beginning
+B E J M Q R U X
+
+
+
+PROBLEM 2
+a) 
+1. Go through both arrays element by element and compare each character in the arrays and if any element is not the same then it is false.
+
+2. The length of the arrays would make a huge impact on the running time.
+
+3. 3 operations have to be counted: the equality operator and 2 charAt methods.
+
+4. 3n operations where n is the length of the arrays.
+
+5. The best case inputs are 2 arrays of length 1 and are either the same or different, doesn't matter. The Worst case is 2 identical arrays of extreme length. The efficiency of my implementation cannot be faster because there are kn operations.
+
+6. O(n)
+
+
+b)
+1. To implement this method, I would use a nested for loop. In the outside loop I would go through each character in the string and in the inner loop I would do the same, except skip over the same index as the outside loop. If any index in the inner loop has the same character as the outer loop I would add 1 to the number of duplicates count which starts at 0.
+
+2. Factors that would affect the running time include the string length, n.
+
+3. The operations would be equalities comparing single characters.
+
+4. There would be n*(n-1) which is almost n^2 operations because every character is compared to the other characters.
+
+5. The best inputs are short strings. The worst case is long strings.
+
+6. O(n^2)
+
+
+c)
+1. I would create a for loop that goes through every row and a nested for loop that goes through each entry of the row and compares it to 0. If every entry in the row then I would record the index for that row.
+
+2. Factors that would affect the running time include the number for rows, r and the number of columns in each row, c.
+
+3. The operations would be equalities comparing an integer entry to 0.
+
+4. There would be r*c operations because there is one inequality operator per each entry in the 2-D array.
+
+5. The best inputs are arrays with the least amount of rows and columns.
+
+6. O(r*c)
+
+
+
+

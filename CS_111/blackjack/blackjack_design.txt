@@ -1,0 +1,28 @@
+Deep Patel     BlackJack Project     MileStone 2
+
+Below is a list of advanced ideas and how I would implement them into my code:.
+
+Insurance:
+If the dealer's face-up card is an Ace, I would offer the players insurance.
+I would check by making a getCard() method in Player.java and use getFace() in Card.java to compare the dealer's card to 1 (ACE's face value). Then, if the player chooses to take the insurance they will be paid 2-1 if the dealer's hidden card is of value 10 or they will lose the money from the bet if not.
+
+
+Splitting:
+This option will be available to the player if their two cards are of the same face, which I will check using getFace(). If it is, I will created another hand and tranfer one of the cards over to that hand. Then, if there is another split, I will do the same for every time. The same original bet will be used for each hand.
+
+
+Double Down:
+This will be implemented when you hit or stand and I will ask by having the user enter "D". Then I will hit one card and double the bet.
+
+
+Blackjack:
+I can see if there is a blackjack if the first 2 card in the array of cards (hand) of each player or the dealer has an ace and value 10 card. Then that hand will win against anything but another blackjack (including a hand of 21 with more than 2 cards).
+
+
+Dynamic Hint System:
+The hint system will keep track of all the cards in the deck, but most importantly use the 2 dealt card's value to suggest a smart move or show the probabilities of each move. It will mostly use getHandSum() for the player and the dealer. This will hint if the dealer's hidden card is small/big or an ace.
+ 
+
+
+
+

@@ -1,0 +1,25 @@
+Deep Patel      Blackjack.txt
+
+CS Project Milestone 3
+
+Differences:
+	The design of this milestone was different from milestone 2 in that mainly I took
+out the bets from the balance in the beginning so everything is current, so I can see if the player has enough money to split, get insurance, etc, without any trouble. Also in splitting I added another hand in Player so that the player cna have 2 hands.
+
+
+Hint System:
+	In the hint system, I included hints based on the players cards and dealers up card. 
+I included hints that include if you should double down, hit, or stand. I also put in hints on whether to stand or not based on what the players cards is and what the dealer's up card is. So the players basic strategy is there. The runnng count is shown to each player at every turn. At the end of each round the probability (advantage) of the players is given so that the players know how much to bet in the next round. Also this tells them if they should even keep playing or not.
+
+
+Challenges:
+	I struggled with getting the idea of objects down in the begginning the most,
+but after making methods and calling them and such with Card and Deck, it became easy. Another challenge I faced was doing the split method. It was challenging because I had to make a whole new hand for when they player splits and also make new methods for the new hand. Another thing is doing the bets for the new hand and having to make sure the player has the needed balance to split and such. This project took longer than I expected. It was challenging because there are many ways to play Blackjack and you have to be creative about how you want the game to be played and find rules that go with your way of playing and at the same time making sure that it complies with what the professor expects in our game. It was fun, nonetheless, and I learned more from this than any other homework assignment or thing learned in class. Another challenge I faced was understanging how objects relate and how to use them in the main loop in Blackjack.java. After the first milestone it became easier to code in this manner. 
+
+
+Lessons Learned:
+	This project took a lot more trial and error and time than I thought it would in the
+beginning. I learned how to implement advanced codes and methods. This project really taught me object oriented coding. It really applies to many other things in life. The code for many other things would take a similar mindset and way to do it. I learned how to code at bigger level. I had to combine many problems and combine them to work well together. I started early and it took a lot of questions and guidance to get my code to work better. I also learned that there are many ways to accomplish the same task in coding. Some methods are more efficient than others. Sometimes it is better to make a map of all the things you have to do so you are prepared for the future. I learned this when I had to implement splitting in the blackjack game. If I had made a hand method it would have been easier to make multiple hands instead of making a hand in player class. This and more made my mind open up to the many possibilities of coding. 
+
+
+
